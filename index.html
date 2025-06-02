@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="welcome-section">
+    <div class="welcome-card">
+        <h2>Welcome!</h2>
+        <p>Is your weed wacker not working? <b>We can help!</b> Fast, reliable, and affordable repairs for all major brands.</p>
+        <a class="cta" href="{{ url_for('contact') }}">Request a Repair</a>
+    </div>
+</section>
+<section class="features">
+    <div class="feature-card">
+        <span class="feature-icon">🔧</span>
+        <h3>Expert Technicians</h3>
+        <p>Years of hands-on experience with all weed wacker models.</p>
+    </div>
+    <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Fast Turnaround</h3>
+        <p>Most repairs completed within 48 hours or less.</p>
+    </div>
+    <div class="feature-card">
+        <span class="feature-icon">💲</span>
+        <h3>Transparent Pricing</h3>
+        <p>Clear, upfront quotes and no hidden fees.</p>
+    </div>
+</section>
+{% endblock %}
